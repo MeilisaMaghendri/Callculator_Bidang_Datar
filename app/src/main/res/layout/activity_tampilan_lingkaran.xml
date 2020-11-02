@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mey">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toEndOf="@+id/linearLayout1"
+        android:textStyle="bold"
+        android:text="MENGHITUNG LINGKARAN" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:text="Masukan Jari-Jari Lingkaran (r) :" />
+
+    <EditText
+        android:id="@+id/rtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/hasil" />
+
+    <Button
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:id="@+id/luas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="LUAS"
+        android:onClick="luas1"/>
+
+    <Button
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:id="@+id/keliling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KELILING"
+        android:layout_below="@+id/luas"
+        android:layout_alignParentStart="true"
+        android:onClick="keliling1"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keliling"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:textStyle="bold"
+        android:text="HASIL :" />
+
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:backgroundTint="@android:color/background_light"
+        android:id="@+id/kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="KEMBALI"
+        android:onClick="kembali1"/>
+
+</RelativeLayout>
